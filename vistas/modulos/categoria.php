@@ -50,21 +50,7 @@
 
         <tbody>
           <?php
-            $item = null;
-            $valor = null;
-            $categorias = ControladorCategoria::ctrMostrarCategoria($item,$valor);
-            foreach ($categorias as $key => $value) {
-                echo '<tr>
-                    <td>'.($key+1).'</td>
-                    <td class="text-uppercase">'.$value["nombre"].'</td>
-                    <td>
-                      <div class="btn-group">
-                        <button class="btn btn-warning btnEditarCategoria" idCategoria="'.$value["id"].'" data-toggle="modal" data-target="#modalEditarCategoria"><i class="fa fa-pencil"></i></button>
-                        <button class="btn btn-danger btnEliminarCategoria"><i class="fa fa-times"></i></button>
-                      </div>
-                    </td>
-                </tr>';
-            }
+        
           ?>
           <!-- <tr>
 
@@ -201,8 +187,7 @@ MODAL AGREGAR Categoria
         </div>
 
         <?php 
-          $crearCategoria = new ControladorCategoria();
-          $crearCategoria->ctrCrearCategoria();
+  
         ?>
 
       </form>
@@ -272,8 +257,7 @@ MODAL AGREGAR Categoria
         </div>
 
         <?php
-          $editarCategoria = new ControladorCategoria();
-          $editarCategoria->ctrEditarCategoria();
+
         ?>
       </form>
 

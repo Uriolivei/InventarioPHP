@@ -11,7 +11,7 @@
                             <i class="material-icons">keyboard_arrow_down</i>
                         </a>
                         <div class="mdl-navigation">
-                            <a class="mdl-navigation__link" href="" onclick="cargarCategoria()">Categorías</a>
+                            <a class="mdl-navigation__link" href="vistas/modulos/categoria.php" onclick="cargarCategoria()">Categorías</a>
                             <a class="mdl-navigation__link" href="ui-cards.html">Productos</a>
                         </div>
                     </div>
