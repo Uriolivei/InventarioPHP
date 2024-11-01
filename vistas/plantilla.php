@@ -25,6 +25,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>La Tiendita de Jonh</title>
 
+    <link rel="shortcut icon" href="vistas/img/marker.png" type="image/x-icon">
+
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
 
@@ -53,9 +55,10 @@
     <link rel="stylesheet" href="vistas/dist/css/application.min.css">
     <!-- endinject -->
 
+
 </head>
 <body>
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header is-small-screen">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header is-small-screen">
     <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
         
@@ -94,10 +97,10 @@
                     <span class="mdl-list__item-avatar background-color--secondary">
                         <i class="material-icons">error_outline</i>
                     </span>
-                  <span>Error en la BD</span>
+                <span>Error en la BD</span>
                 </span>
                 <span class="mdl-list__item-secondary-content">
-                  <span class="label">1 min</span>
+                <span class="label">1 min</span>
                 </span>
             </li>
             <li class="mdl-menu__item mdl-list__item list__item--border-top">
@@ -105,10 +108,10 @@
                     <span class="mdl-list__item-avatar background-color--primary">
                         <i class="material-icons">mail_outline</i>
                     </span>
-                  <span>Tines 4 mensajes nuevos.</span>
+                <span>Tines 4 mensajes nuevos.</span>
                 </span>
                 <span class="mdl-list__item-secondary-content">
-                  <span class="label">5 días</span>
+                <span class="label">5 días</span>
                 </span>
             </li>
             <li class="mdl-list__item list__item--border-top">
@@ -135,7 +138,7 @@
                     <span class="mdl-list__item-sub-title">Fiesta de Cumpleaños</span>
                 </span>
                 <span class="mdl-list__item-secondary-content">
-                  <span class="label label--transparent">2 min</span>
+                <span class="label label--transparent">2 min</span>
                 </span>
             </li>
             <li class="mdl-menu__item mdl-list__item mdl-list__item--two-line list__item--border-top">
@@ -147,7 +150,7 @@
                     <span class="mdl-list__item-sub-title">Sin Asunto</span>
                 </span>
                 <span class="mdl-list__item-secondary-content">
-                  <span class="label label--transparent">20 min</span>
+                <span class="label label--transparent">20 min</span>
                 </span>
             </li>
             <li class="mdl-menu__item mdl-list__item mdl-list__item--two-line list__item--border-top">
@@ -226,10 +229,11 @@
         </div>
     </header>
 
-    
+
+    <!-- Menú de navegación -->
     <div class="mdl-layout__drawer">
         <header>darkboard</header>
-        <div class="scroll__wrapper" id="scroll__wrapper">
+        <div class="scroll" id="scroll">
             <div class="scroller" id="scroller">
                 <div class="scroll__container" id="scroll__container">
                     <nav class="mdl-navigation">
@@ -244,15 +248,11 @@
                                 <i class="material-icons">keyboard_arrow_down</i>
                             </a>
                             <div class="mdl-navigation">
-                                <a class="mdl-navigation__link" href="ui-buttons.html">
-                                    Buttons
-                                </a>
-                                <a class="mdl-navigation__link" href="ui-cards.html">
-                                    Cards
-                                </a>
+                                <a class="mdl-navigation__link" href="ui-buttons.html">Buttons</a>
+                                <a class="mdl-navigation__link" href="ui-cards.html">Cards</a>
                             </div>
                         </div>
-                    
+
                         <div class="sub-navigation">
                             <a class="mdl-navigation__link">
                                 <i class="material-icons">pages</i>
@@ -260,18 +260,10 @@
                                 <i class="material-icons">keyboard_arrow_down</i>
                             </a>
                             <div class="mdl-navigation">
-                                <a class="mdl-navigation__link" href="login.html">
-                                    Sign in
-                                </a>
-                                <a class="mdl-navigation__link" href="sign-up.html">
-                                    Sign up
-                                </a>
-                                <a class="mdl-navigation__link" href="forgot-password.html">
-                                    Forgot password
-                                </a>
-                                <a class="mdl-navigation__link" href="404.html">
-                                    ERROR 404
-                                </a>
+                                <a class="mdl-navigation__link" href="login.html">Sign in</a>
+                                <a class="mdl-navigation__link" href="sign-up.html">Sign up</a>
+                                <a class="mdl-navigation__link" href="forgot-password.html">Forgot password</a>
+                                <a class="mdl-navigation__link" href="404.html">ERROR 404</a>
                             </div>
                         </div>
                         <div class="mdl-layout-spacer"></div>
@@ -287,6 +279,7 @@
         </div>
     </div>
 
+
     <main class="mdl-layout__content">
 
         <div class="mdl-grid mdl-grid--no-spacing dashboard">
@@ -301,7 +294,7 @@
                         </div>
                         <div class="mdl-card__supporting-text">
                             <div class="pie-chart__container">
-
+                            
                             </div>
                         </div>
                     </div>
@@ -380,14 +373,14 @@
                 <div class="mdl-cell mdl-cell--10-col-desktop mdl-cell--5-col-tablet mdl-cell--2-col-phone">
                     <div class="mdl-card mdl-shadow--2dp robot">
                         <div class="mdl-card__title mdl-card--expand">
-                            <h2 class="mdl-card__title-text">BB-8</h2>
+                            <h2 class="mdl-card__title-text">Robot de la empresa</h2>
                         </div>
                         <div class="mdl-card__supporting-text">
                             <div>
-                                A skittish but loyal astromech, BB-8 accompanied Poe Dameron on many missions for the
-                                Resistance helping keep his X-wing in working order.
+                                Pesonaje de la saga de peliculas "Star Wars: Las Guerras de las Galaxias"
+                                BB-8
                             </div>
-                            <a href="http://www.starwars.com/databank/bb-8" target="_blank">Star Wars Databank</a>
+                            <a href="http://www.starwars.com/databank/bb-8" target="_blank">Star Wars</a>
                         </div>
                     </div>
                 </div>
@@ -421,21 +414,21 @@
 </div>
 
 <!-- inject:js -->
-<script src="vistas/dist/js/d3.min.js"></script>
-<script src="vistas/dist/js/getmdl-select.min.js"></script>
-<script src="vistas/dist/js/material.min.js"></script>
-<script src="vistas/dist/js/nv.d3.min.js"></script>
-<script src="vistas/dist/js/layout/layout.min.js"></script>
-<script src="vistas/dist/js/scroll/scroll.min.js"></script>
-<script src="vistas/dist/js/widgets/charts/discreteBarChart.min.js"></script>
-<script src="vistas/dist/js/widgets/charts/linePlusBarChart.min.js"></script>
-<script src="vistas/dist/js/widgets/charts/stackedBarChart.min.js"></script>
-<script src="vistas/dist/js/widgets/employer-form/employer-form.min.js"></script>
-<script src="vistas/dist/js/widgets/line-chart/line-charts-nvd3.min.js"></script>
-<script src="vistas/dist/js/widgets/map/maps.min.js"></script>
-<script src="vistas/dist/js/widgets/pie-chart/pie-charts-nvd3.min.js"></script>
-<script src="vistas/dist/js/widgets/table/table.min.js"></script>
-<script src="vistas/dist/js/widgets/todo/todo.min.js"></script>
+<script src="vistas/js/d3.min.js"></script>
+<script src="vistas/js/getmdl-select.min.js"></script>
+<script src="vistas/js/material.min.js"></script>
+<script src="vistas/js/nv.d3.min.js"></script>
+<script src="vistas/js/layout/layout.min.js"></script>
+<script src="vistas/js/scroll/scroll.min.js"></script>
+<script src="vistas/js/widgets/charts/discreteBarChart.min.js"></script>
+<script src="vistas/js/widgets/charts/linePlusBarChart.min.js"></script>
+<script src="vistas/js/widgets/charts/stackedBarChart.min.js"></script>
+<script src="vistas/js/widgets/employer-form/employer-form.min.js"></script>
+<script src="vistas/js/widgets/line-chart/line-charts-nvd3.min.js"></script>
+<script src="vistas/js/widgets/map/maps.min.js"></script>
+<script src="vistas/js/widgets/pie-chart/pie-charts-nvd3.min.js"></script>
+<script src="vistas/js/widgets/table/table.min.js"></script>
+<script src="vistas/js/widgets/todo/todo.min.js"></script>
 <!-- endinject -->
 
 </body>
