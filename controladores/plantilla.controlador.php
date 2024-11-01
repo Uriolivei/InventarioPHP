@@ -1,9 +1,12 @@
 <?php
 
-//nombre d ela clase
+//nombre la clase
 class PlantillaControlador{
-    //nombre del metodo
+
+    //nombre del método
     public function plantilla(){
         require "vistas/plantilla.php"; //enrutando al archivo php
     }
+
 }
+
